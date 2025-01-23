@@ -1,4 +1,5 @@
 import 'package:booqs_mobile/components/word/item/ipa.dart';
+import 'package:booqs_mobile/components/word/item/meaning_image.dart';
 import 'package:booqs_mobile/components/word/item/pos_tag.dart';
 import 'package:booqs_mobile/components/word/item/reversed_review_button.dart';
 import 'package:booqs_mobile/data/provider/word.dart';
@@ -46,6 +47,7 @@ class WordListItem extends ConsumerWidget {
                 const SizedBox(
                   height: 24,
                 ),
+                WordItemMeaningImage(word: word),
                 WordItemSentence(word: word),
                 WordItemEditButton(
                   word: word,

@@ -19,6 +19,7 @@ class Word {
     this.pos,
     this.ipa,
     this.reading,
+    this.meaningImageUrl,
     this.etymologies,
     this.synonyms,
     this.antonyms,
@@ -50,6 +51,7 @@ class Word {
   String? pos;
   String? ipa;
   String? reading;
+  String? meaningImageUrl;
   String? etymologies;
   String? synonyms;
   String? antonyms;
@@ -80,6 +82,7 @@ class Word {
         pos = json['pos'],
         ipa = json['ipa'],
         reading = json['reading'],
+        meaningImageUrl = json['meaning_image_url'],
         etymologies = json['etymologies'],
         synonyms = json['synonyms'],
         antonyms = json['antonyms'],
@@ -126,6 +129,7 @@ class Word {
         'pos': pos,
         'ipa': ipa,
         'reading': reading,
+        'meaning_image_url': meaningImageUrl,
         'etymologies': etymologies,
         'synonyms': synonyms,
         'antonyms': antonyms,
